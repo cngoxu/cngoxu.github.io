@@ -25,14 +25,15 @@
 <meta property="og:site_name" content="小驿站主页">
 <meta property="og:description" content="准备条件：一部安卓手机，需要root 安装方式：自定义安装Linux镜像 参考链接  安卓安装Linux Deploy 基础安装&amp;&amp;自定义安装-CSDN博客 linux deploy安装指南(升级)-CSDN博客 使用Linux Deploy将闲置的安卓手机改造简易服务器 - sw-code - 博客园 (cnblogs.com)   1.安装Busybox 下载安装busybo">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://blog.cngo.rr.nu/img/5201314.bmp">
+<meta property="og:image" content="https://blog.cngo.rr.nu/img/Linux_deploy.png">
 <meta property="article:published_time" content="2024-06-17T12:50:46.000Z">
 <meta property="article:modified_time" content="2024-06-17T18:50:46.000Z">
 <meta property="article:author" content="cngo">
 <meta property="article:tag" content="Linux Deploy">
 <meta property="article:tag" content="Root">
+<meta property="article:tag" content="Android">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://blog.cngo.rr.nu/img/5201314.bmp">
+<meta name="twitter:image" content="https://blog.cngo.rr.nu/img/Linux_deploy.png">
   
   
   
@@ -74,7 +75,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"blog.cngo.rr.nu","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":false,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"srGpqnaVsw1DuXDYQD6uHK5z-MdYXbMMI","app_key":"M2dtqJNKzC5cTenvjfQXn3ZP","server_url":"https://api.cngo.rr.nu","path":"window.location.pathname","ignore_local":true}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"blog.cngo.rr.nu","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":false,"default":"SHELL"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"srGpqnaVsw1DuXDYQD6uHK5z-MdYXbMMI","app_key":"M2dtqJNKzC5cTenvjfQXn3ZP","server_url":"https://api.cngo.rr.nu","path":"window.location.pathname","ignore_local":true}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -225,7 +226,7 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('/img/5201314.bmp') no-repeat center center; background-size: cover;">
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
@@ -323,44 +324,17 @@
     
     <div class="category row nomargin-x">
       <a class="category-item 
-          list-group-item category-item-action col-10 col-md-11 col-xm-11" title="Technical articles"
-        id="heading-fd9104bbff76ffa40a73f377f2eb5529" role="tab" data-toggle="collapse" href="#collapse-fd9104bbff76ffa40a73f377f2eb5529"
+          list-group-item category-item-action col-10 col-md-11 col-xm-11" title="技术文章"
+        id="heading-fa68088fdc641de7bb462464d8f2fb33" role="tab" data-toggle="collapse" href="#collapse-fa68088fdc641de7bb462464d8f2fb33"
         aria-expanded="true"
       >
-        Technical articles
-        <span class="list-group-count">(2)</span>
+        技术文章
+        <span class="list-group-count">(7)</span>
         <i class="iconfont icon-arrowright"></i>
       </a>
       
-      <div class="category-collapse collapse show" id="collapse-fd9104bbff76ffa40a73f377f2eb5529"
-           role="tabpanel" aria-labelledby="heading-fd9104bbff76ffa40a73f377f2eb5529">
-        
-        
-          
-          
-  <div class="category-post-list">
-    
-    
-  </div>
-
-          
-  
-    
-    
-    
-    <div class="category-sub row nomargin-x">
-      <a class="category-subitem 
-          list-group-item category-item-action col-10 col-md-11 col-xm-11" title="Android"
-        id="heading-e84e30b9390cdb64db6db2c9ab87846d" role="tab" data-toggle="collapse" href="#collapse-e84e30b9390cdb64db6db2c9ab87846d"
-        aria-expanded="true"
-      >
-        Android
-        <span class="list-group-count">(2)</span>
-        <i class="iconfont icon-arrowright"></i>
-      </a>
-      
-      <div class="category-collapse collapse show" id="collapse-e84e30b9390cdb64db6db2c9ab87846d"
-           role="tabpanel" aria-labelledby="heading-e84e30b9390cdb64db6db2c9ab87846d">
+      <div class="category-collapse collapse show" id="collapse-fa68088fdc641de7bb462464d8f2fb33"
+           role="tabpanel" aria-labelledby="heading-fa68088fdc641de7bb462464d8f2fb33">
         
         
           
@@ -369,10 +343,28 @@
     
       
       
-        <a href="/2024/06/18/Fluid%E4%B8%BB%E9%A2%98%E5%8A%9F%E8%83%BD%E6%B5%8B%E8%AF%95/" title="Fluid主题功能测试"
+        <a href="/2024/06/19/Cloudflare%E7%9B%B8%E5%85%B3%E6%95%99%E7%A8%8B/" title="Cloudflare相关教程"
            class="list-group-item list-group-item-action
            ">
-          <span class="category-post">Fluid主题功能测试</span>
+          <span class="category-post">Cloudflare相关教程</span>
+        </a>
+      
+    
+      
+      
+        <a href="/2024/06/18/Fluid%E4%B8%BB%E9%A2%98%E5%8A%9F%E8%83%BD%E6%B5%8B%E8%AF%95/" title="Hexo|Fluid主题功能测试"
+           class="list-group-item list-group-item-action
+           ">
+          <span class="category-post">Hexo|Fluid主题功能测试</span>
+        </a>
+      
+    
+      
+      
+        <a href="/2024/06/19/Hexo%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E4%B8%8EFluid%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/" title="Hexo自定义域名与Fluid评论系统"
+           class="list-group-item list-group-item-action
+           ">
+          <span class="category-post">Hexo自定义域名与Fluid评论系统</span>
         </a>
       
     
@@ -385,58 +377,35 @@
         </a>
       
     
-  </div>
-
-        
-      </div>
-    </div>
-  
-    
-    
-    
-    <div class="category-sub row nomargin-x">
-      <a class="category-subitem 
-          list-group-item category-item-action col-10 col-md-11 col-xm-11" title="Linux"
-        id="heading-edc9f0a5a5d57797bf68e37364743831" role="tab" data-toggle="collapse" href="#collapse-edc9f0a5a5d57797bf68e37364743831"
-        aria-expanded="true"
-      >
-        Linux
-        <span class="list-group-count">(2)</span>
-        <i class="iconfont icon-arrowright"></i>
-      </a>
-      
-      <div class="category-collapse collapse show" id="collapse-edc9f0a5a5d57797bf68e37364743831"
-           role="tabpanel" aria-labelledby="heading-edc9f0a5a5d57797bf68e37364743831">
-        
-        
-          
-  <div class="category-post-list">
-    
-    
       
       
-        <a href="/2024/06/18/Fluid%E4%B8%BB%E9%A2%98%E5%8A%9F%E8%83%BD%E6%B5%8B%E8%AF%95/" title="Fluid主题功能测试"
+        <a href="/2024/06/02/%E4%B8%80%E4%B8%AAU%E7%9B%98%E7%97%85%E6%AF%92%E8%A7%A3%E5%86%B3%E6%97%A5%E5%BF%97/" title="一个U盘病毒解决日志"
            class="list-group-item list-group-item-action
            ">
-          <span class="category-post">Fluid主题功能测试</span>
+          <span class="category-post">一个U盘病毒解决日志</span>
         </a>
       
     
       
       
-        <a href="/2024/06/17/Linux-Deploy-%E8%87%AA%E5%AE%9A%E4%B9%89%E9%85%8D%E7%BD%AE-Ubuntu20-04-6LTS-focal/" title="Linux Deploy 自定义配置 Ubuntu20.04.6LTS(focal)"
+        <a href="/2024/06/17/%E5%B0%8F%E7%B1%B3%E5%B9%B3%E6%9D%BF2ROOT%E6%95%99%E7%A8%8B/" title="小米平板2ROOT教程"
            class="list-group-item list-group-item-action
-           active">
-          <span class="category-post">Linux Deploy 自定义配置 Ubuntu20.04.6LTS(focal)</span>
+           ">
+          <span class="category-post">小米平板2ROOT教程</span>
+        </a>
+      
+    
+      
+      
+        <a href="/2024/06/17/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2-Hexo-Markdown-Github-Pages/" title="搭建个人博客 - Hexo+Markdown+Github Pages"
+           class="list-group-item list-group-item-action
+           ">
+          <span class="category-post">搭建个人博客 - Hexo+Markdown+Github Pages</span>
         </a>
       
     
   </div>
 
-        
-      </div>
-    </div>
-  
         
       </div>
     </div>
@@ -616,15 +585,8 @@
     
       <span class="category-chain">
         
-  <a href="/categories/Technical-articles/" class="category-chain-item">Technical articles</a>
+  <a href="/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/" class="category-chain-item">技术文章</a>
   
-  
-    <span>></span>
-    
-  <a href="/categories/Technical-articles/Linux/" class="category-chain-item">Linux</a>
-  
-  
-
   
 
       </span>
@@ -641,6 +603,8 @@
         <a href="/tags/Linux-Deploy/" class="print-no-link">#Linux Deploy</a>
       
         <a href="/tags/Root/" class="print-no-link">#Root</a>
+      
+        <a href="/tags/Android/" class="print-no-link">#Android</a>
       
     </div>
   
@@ -723,20 +687,21 @@
   
     <article id="comments" lazyload>
       
-  <div id="valine"></div>
+  <div id="waline"></div>
   <script type="text/javascript">
-    Fluid.utils.loadComments('#valine', function() {
-      Fluid.utils.createScript('https://lib.baomitu.com/valine/1.5.1/Valine.min.js', function() {
+    Fluid.utils.loadComments('#waline', function() {
+      Fluid.utils.createCssLink('https://cdn.staticfile.org/waline/2.15.5/waline.min.css')
+      Fluid.utils.createScript('https://cdn.staticfile.org/waline/2.15.5/waline.min.js', function() {
         var options = Object.assign(
-          {"appId":"srGpqnaVsw1DuXDYQD6uHK5z-MdYXbMMI","appKey":"M2dtqJNKzC5cTenvjfQXn3ZP","path":"window.location.pathname","placeholder":null,"avatar":"retro","meta":["nick","mail","link"],"requiredFields":[],"pageSize":10,"lang":"zh-CN","highlight":false,"recordIP":true,"serverURLs":"https://api.cngo.rr.nu","emojiCDN":null,"emojiMaps":null,"enableQQ":false},
+          {"serverURL":"https://waline.cncom.dynv6.net","path":"window.location.pathname","meta":["nick","mail","link"],"requiredMeta":["nick"],"lang":"zh-CN","emoji":["https://cdn.jsdelivr.net/gh/walinejs/emojis/weibo"],"dark":"html[data-user-color-scheme=\"dark\"]","wordLimit":0,"pageSize":10},
           {
-            el: "#valine",
+            el: '#waline',
             path: window.location.pathname
           }
         )
-        new Valine(options);
-        Fluid.utils.waitElementVisible('#valine .vcontent', () => {
-          var imgSelector = '#valine .vcontent img:not(.vemoji)';
+        Waline.init(options);
+        Fluid.utils.waitElementVisible('#waline .vcontent', () => {
+          var imgSelector = '#waline .vcontent img:not(.vemoji)';
           Fluid.plugins.imageCaption(imgSelector);
           Fluid.plugins.fancyBox(imgSelector);
         })
