@@ -19,8 +19,8 @@
   <meta name="keywords" content="">
   
     <meta property="og:type" content="website">
-<meta property="og:title" content="标签 - Root">
-<meta property="og:url" content="https://blog.cngo.rr.nu/tags/Root/index.html">
+<meta property="og:title" content="小驿站主页">
+<meta property="og:url" content="https://blog.cngo.rr.nu/page/2/index.html">
 <meta property="og:site_name" content="小驿站主页">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:author" content="cngo">
@@ -28,7 +28,7 @@
   
   
   
-  <title>标签 - Root - 小驿站主页</title>
+  <title>小驿站主页</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -111,7 +111,7 @@
   <header>
     
 
-<div class="header-inner" style="height: 80vh;">
+<div class="header-inner" style="height: 100vh;">
   <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand" href="/">
@@ -217,7 +217,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="标签 - Root"></span>
+            <span id="subtitle" data-typed-text="Welcome to Xiaoyi Blog"></span>
           
         </div>
 
@@ -241,36 +241,82 @@
     
       <div class="container nopadding-x-md">
         <div id="board"
-          >
+          style="margin-top: 0">
           
           <div class="container">
             <div class="row">
               <div class="col-12 col-md-10 m-auto">
                 
 
-<div class="list-group">
-  <p class="h4">共计 2 篇文章</p>
-  <hr>
-  
-  
+
+  <div class="row mx-auto index-card">
     
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2024/06/02/%E4%B8%80%E4%B8%AAU%E7%9B%98%E7%97%85%E6%AF%92%E8%A7%A3%E5%86%B3%E6%97%A5%E5%BF%97/" target="_self">
+          一个U盘病毒解决日志
+        </a>
+      </h2>
+
       
-      <p class="h5">2024</p>
-    
-    <a href="/2024/06/17/%E5%B0%8F%E7%B1%B3%E5%B9%B3%E6%9D%BF2ROOT%E6%95%99%E7%A8%8B/" class="list-group-item list-group-item-action">
-      <time>06-17</time>
-      <div class="list-group-item-title">小米平板2ROOT教程</div>
-    </a>
+      <a class="index-excerpt index-excerpt__noimg" href="/2024/06/02/%E4%B8%80%E4%B8%AAU%E7%9B%98%E7%97%85%E6%AF%92%E8%A7%A3%E5%86%B3%E6%97%A5%E5%BF%97/" target="_self">
+        <div>
+          参考链接：U盘病毒（类removeable disk病毒）_kaspersky文件夹usb drive-CSDN博客 病毒来源猜测学校打印店（正值毕业论文打印高峰） 现象 U盘内所有文件消失，主目录存在一个与U盘同名的exe文件，通常命名为Usb Disk（内存）.exe 和removeable disk.病毒有点类似的病毒，但又有所不同，特此记录。 双击exe可以打开文件，同时也会植入病毒程序，
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2024-06-02 14:34" pubdate>
+              2024-06-02
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
   
     
-    <a href="/2024/06/17/Linux-Deploy-%E8%87%AA%E5%AE%9A%E4%B9%89%E9%85%8D%E7%BD%AE-Ubuntu20-04-6LTS-focal/" class="list-group-item list-group-item-action">
-      <time>06-17</time>
-      <div class="list-group-item-title">Linux Deploy 自定义配置 Ubuntu20.04.6LTS(focal)</div>
-    </a>
+      <span class="category-chain">
+        
+  <a href="/categories/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/" class="category-chain-item">技术文章</a>
   
-</div>
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E7%97%85%E6%AF%92/">#病毒</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
 
 
+
+  <nav aria-label="navigation">
+    <span class="pagination" id="pagination">
+      <a class="extend prev" rel="prev" href="/"><i class="iconfont icon-arrowleft"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+    </span>
+  </nav>
 
 
 
@@ -383,7 +429,37 @@
       }
       var text = subtitle.getAttribute('data-typed-text');
       
-        typing(text);
+        jQuery.ajax({
+          type: 'GET',
+          url: 'https://api.xygeng.cn/one',
+          headers: {},
+          dataType: 'json',
+          success: function(result) {
+            var apiText;
+            if (result) {
+              var keys = 'data,content'.split(',');
+              if (result instanceof Array) {
+                result = result[0];
+              }
+              for (const k of keys) {
+                var value = result[k];
+                if (typeof value === 'string') {
+                  apiText = value;
+                  break;
+                } else if (value instanceof Object) {
+                  result = value;
+                }
+              }
+            }
+            apiText ? typing(apiText) : typing(text);
+          },
+          error: function(xhr, status, error) {
+            if (error) {
+              console.error('Failed to request https://api.xygeng.cn/one:', error);
+            }
+            typing(text);
+          }
+        })
       
     })(window, document);
   </script>
