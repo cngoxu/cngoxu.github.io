@@ -18,12 +18,12 @@
   <meta name="author" content="cngo">
   <meta name="keywords" content="">
   
-    <meta name="description" content="准备条件：一部安卓手机，需要root 安装方式：自定义安装Linux镜像 参考链接  安卓安装Linux Deploy 基础安装&amp;&amp;自定义安装-CSDN博客 linux deploy安装指南(升级)-CSDN博客 使用Linux Deploy将闲置的安卓手机改造简易服务器 - sw-code - 博客园 (cnblogs.com)   1.安装Busybox 下载安装busybo">
+    <meta name="description" content="准备条件：一部安卓手机，需要root 安装方式：自定义安装Linux镜像 参考链接  安卓安装Linux Deploy 基础安装&amp;&amp;自定义安装-CSDN博客 linux deploy安装指南(升级)-CSDN博客 使用Linux Deploy将闲置的安卓手机改造简易服务器 - sw-code - 博客园 (cnblogs.com) 解决chroot下无法使用systemctl">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Linux Deploy 自定义配置 Ubuntu20.04.6LTS(focal)">
 <meta property="og:url" content="https://blog.cngo.rr.nu/2024/06/17/Linux-Deploy-%E8%87%AA%E5%AE%9A%E4%B9%89%E9%85%8D%E7%BD%AE-Ubuntu20-04-6LTS-focal/index.html">
 <meta property="og:site_name" content="小驿站主页">
-<meta property="og:description" content="准备条件：一部安卓手机，需要root 安装方式：自定义安装Linux镜像 参考链接  安卓安装Linux Deploy 基础安装&amp;&amp;自定义安装-CSDN博客 linux deploy安装指南(升级)-CSDN博客 使用Linux Deploy将闲置的安卓手机改造简易服务器 - sw-code - 博客园 (cnblogs.com)   1.安装Busybox 下载安装busybo">
+<meta property="og:description" content="准备条件：一部安卓手机，需要root 安装方式：自定义安装Linux镜像 参考链接  安卓安装Linux Deploy 基础安装&amp;&amp;自定义安装-CSDN博客 linux deploy安装指南(升级)-CSDN博客 使用Linux Deploy将闲置的安卓手机改造简易服务器 - sw-code - 博客园 (cnblogs.com) 解决chroot下无法使用systemctl">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://blog.cngo.rr.nu/img/Linux_deploy.png">
 <meta property="article:published_time" content="2024-06-17T12:50:46.000Z">
@@ -260,7 +260,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.2k 字
+          1.4k 字
         
       </span>
     
@@ -271,7 +271,7 @@
         
         
         
-          11 分钟
+          12 分钟
         
       </span>
     
@@ -329,7 +329,7 @@
         aria-expanded="true"
       >
         技术文章
-        <span class="list-group-count">(7)</span>
+        <span class="list-group-count">(10)</span>
         <i class="iconfont icon-arrowright"></i>
       </a>
       
@@ -340,6 +340,24 @@
           
   <div class="category-post-list">
     
+    
+      
+      
+        <a href="/2024/06/24/Chrome%E6%B5%8F%E8%A7%88%E5%99%A8%E6%89%A9%E5%B1%95%E5%AE%9E%E8%B7%B5%E4%B9%8BCSDN%E7%AF%87%EF%BC%88%E8%A7%A3%E9%99%A4%E5%85%B3%E6%B3%A8%E9%99%90%E5%88%B6%E3%80%81%E7%A0%B4%E8%A7%A3%E5%A4%8D%E5%88%B6%EF%BC%89/" title="Chrome浏览器扩展实践之CSDN篇（解除关注限制、破解复制）"
+           class="list-group-item list-group-item-action
+           ">
+          <span class="category-post">Chrome浏览器扩展实践之CSDN篇（解除关注限制、破解复制）</span>
+        </a>
+      
+    
+      
+      
+        <a href="/2024/06/22/Cloudflare-Zerotrust-%E4%B9%8B-Webssh/" title="Cloudflare Zerotrust 之 Webssh"
+           class="list-group-item list-group-item-action
+           ">
+          <span class="category-post">Cloudflare Zerotrust 之 Webssh</span>
+        </a>
+      
     
       
       
@@ -374,6 +392,15 @@
            class="list-group-item list-group-item-action
            active">
           <span class="category-post">Linux Deploy 自定义配置 Ubuntu20.04.6LTS(focal)</span>
+        </a>
+      
+    
+      
+      
+        <a href="/2024/06/22/Termux-%E5%AE%89%E5%8D%93%E7%BB%88%E7%AB%AF%E6%A8%A1%E6%8B%9F%E5%99%A8/" title="Termux-安卓终端模拟器"
+           class="list-group-item list-group-item-action
+           ">
+          <span class="category-post">Termux-安卓终端模拟器</span>
         </a>
       
     
@@ -445,6 +472,7 @@
 <li><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_28817367/article/details/130394040">安卓安装Linux Deploy 基础安装&amp;&amp;自定义安装-CSDN博客</a></li>
 <li><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_43509120/article/details/121429387">linux deploy安装指南(升级)-CSDN博客</a></li>
 <li><a target="_blank" rel="noopener" href="https://www.cnblogs.com/sw-code/p/14990229.html">使用Linux Deploy将闲置的安卓手机改造简易服务器 - sw-code - 博客园 (cnblogs.com)</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.cnblogs.com/sw-code/p/14998645.html">解决chroot下无法使用systemctl </a></li>
 </ul>
 </blockquote>
 <h2 id="1-安装Busybox"><a href="#1-安装Busybox" class="headerlink" title="1.安装Busybox"></a>1.安装Busybox</h2><ul>
@@ -567,7 +595,25 @@
 <p>可能出现 Permissions 0644 for ‘&#x2F;Users&#x2F;…&#x2F;.ssh&#x2F;..’ are too open…（重装容器解决）</p>
 </blockquote>
 <h2 id="8-备份-rootfs"><a href="#8-备份-rootfs" class="headerlink" title="8.备份 rootfs"></a>8.备份 rootfs</h2><p>右上角导出，选择导出位置，等待完成即可</p>
-<h1 id="解决chroot下无法使用systemctl"><a href="#解决chroot下无法使用systemctl" class="headerlink" title="解决chroot下无法使用systemctl "></a><a target="_blank" rel="noopener" href="https://www.cnblogs.com/sw-code/p/14998645.html">解决chroot下无法使用systemctl </a></h1>
+<h2 id="9-解决chroot下无法使用systemctl"><a href="#9-解决chroot下无法使用systemctl" class="headerlink" title="9.解决chroot下无法使用systemctl"></a>9.解决chroot下无法使用systemctl</h2><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs shell">wget https://github.com/smaknsk/servicectl/archive/1.0.tar.gz<br>sudo tar -xf 1.0.tar.gz -C /usr/local/lib/<br>sudo ln -s /usr/local/lib/servicectl-1.0/servicectl /usr/bin/servicectl<br>sudo ln -s /usr/local/lib/servicectl-1.0/serviced /usr/bin/serviced<br></code></pre></td></tr></table></figure>
+
+<h3 id="使用servicectl"><a href="#使用servicectl" class="headerlink" title="使用servicectl"></a>使用servicectl</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">sudo servicectl action service<br></code></pre></td></tr></table></figure>
+
+<p>‎此命令仅执行文件 <code>/usr/lib/systemd/system/$&#123;service&#125;.service</code>中的<code>$&#123;action&#125;</code>， 如果通过的操作启用或禁用，则<code>servicectl</code>将在 <code>$&#123;service&#125;.service</code>上创建或删除<code>symlink</code>以供使用服务。‎</p>
+<p>参数:</p>
+<ul>
+<li>action - 可以是 {<code>start</code>, <code>stop</code>, <code>restart</code>, <code>reload</code>, <code>enable</code>, <code>disable</code>}</li>
+<li>service -在<code>/usr/lib/systemd/system/</code>文件夹中的文件</li>
+</ul>
+<h3 id="使用serviced"><a href="#使用serviced" class="headerlink" title="使用serviced"></a>使用serviced</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs undefined">sudo serviced action<br></code></pre></td></tr></table></figure>
+
+<p>‎此命令执行 <code>$&#123;action&#125;</code> 为所有启用服务。‎</p>
+<p>参数:</p>
+<ul>
+<li>action -默认是<code>start</code>，也可以是： {<code>start</code>, <code>stop</code>, <code>restart</code>, <code>reload</code>, <code>disable</code>}</li>
+</ul>
+<h3 id="例如"><a href="#例如" class="headerlink" title="例如"></a>例如</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># inside chroot</span><br>sudo servicectl <span class="hljs-built_in">enable</span> mariadb<br><br><span class="hljs-comment"># outside chroot: </span><br><span class="hljs-comment"># init startup and run all enabled daemons</span><br>sudo <span class="hljs-built_in">chroot</span> /path/to/chroot serviced<br></code></pre></td></tr></table></figure>
+
                 
               </div>
             

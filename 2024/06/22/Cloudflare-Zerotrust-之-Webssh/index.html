@@ -18,22 +18,27 @@
   <meta name="author" content="cngo">
   <meta name="keywords" content="">
   
-    <meta name="description" content="​	Cloudflare是偶滴神！  Workers &amp; Pages 项目集 GitHub - zhuima&#x2F;awesome-cloudflare: 精选的 Cloudflare 工具、开源项目、指南、博客和其他资源列表 Cloudflare Workers 优秀项目集景 (jialikemeng.github.io)   ZeroTurst 内网穿透系列 Cloudflare">
+    <meta name="description" content="参考链接： 使用cloudflare转发ssh端口 - kelley_go - 博客园 (cnblogs.com) 使用 Cloudflare Tunnels 通过 Web SSH 访问服务器 (hellowood.dev) Linux | systemd详解 | system.service | 参数解析_remainafterexit-CSDN博客 创建本地管理隧道 (CLI) | Cloud">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Cloudflare相关教程">
-<meta property="og:url" content="https://blog.cngo.rr.nu/2024/06/19/Cloudflare%E7%9B%B8%E5%85%B3%E6%95%99%E7%A8%8B/index.html">
+<meta property="og:title" content="Cloudflare Zerotrust 之 Webssh">
+<meta property="og:url" content="https://blog.cngo.rr.nu/2024/06/22/Cloudflare-Zerotrust-%E4%B9%8B-Webssh/index.html">
 <meta property="og:site_name" content="小驿站主页">
-<meta property="og:description" content="​	Cloudflare是偶滴神！  Workers &amp; Pages 项目集 GitHub - zhuima&#x2F;awesome-cloudflare: 精选的 Cloudflare 工具、开源项目、指南、博客和其他资源列表 Cloudflare Workers 优秀项目集景 (jialikemeng.github.io)   ZeroTurst 内网穿透系列 Cloudflare">
+<meta property="og:description" content="参考链接： 使用cloudflare转发ssh端口 - kelley_go - 博客园 (cnblogs.com) 使用 Cloudflare Tunnels 通过 Web SSH 访问服务器 (hellowood.dev) Linux | systemd详解 | system.service | 参数解析_remainafterexit-CSDN博客 创建本地管理隧道 (CLI) | Cloud">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2024-06-19T06:49:27.000Z">
-<meta property="article:modified_time" content="2024-06-19T09:37:25.703Z">
+<meta property="og:image" content="https://img.hellowood.dev/picture/homelab-cloudflare-ssh-application-create.png">
+<meta property="og:image" content="https://img.hellowood.dev/picture/homelab-cloudflare-ssh-configuration-application.png">
+<meta property="og:image" content="https://img.hellowood.dev/picture/homelab-cloudflare-ssh-configuration-policy.png">
+<meta property="og:image" content="https://img.hellowood.dev/picture/homelab-cloudflare-ssh-set-application-type.png">
+<meta property="article:published_time" content="2024-06-22T13:10:56.000Z">
+<meta property="article:modified_time" content="2024-06-24T09:21:30.023Z">
 <meta property="article:author" content="cngo">
 <meta property="article:tag" content="Cloudflare">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://img.hellowood.dev/picture/homelab-cloudflare-ssh-application-create.png">
   
   
   
-  <title>Cloudflare相关教程 - 小驿站主页</title>
+  <title>Cloudflare Zerotrust 之 Webssh - 小驿站主页</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -228,7 +233,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Cloudflare相关教程"></span>
+            <span id="subtitle" data-typed-text="Cloudflare Zerotrust 之 Webssh"></span>
           
         </div>
 
@@ -244,8 +249,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2024-06-19 14:49" pubdate>
-          2024年06月19日 14:49:27
+        <time datetime="2024-06-22 21:10" pubdate>
+          2024年06月22日 21:10:56
         </time>
       </span>
     
@@ -256,7 +261,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          105 字
+          1k 字
         
       </span>
     
@@ -267,7 +272,7 @@
         
         
         
-          1 分钟
+          9 分钟
         
       </span>
     
@@ -350,7 +355,7 @@
       
         <a href="/2024/06/22/Cloudflare-Zerotrust-%E4%B9%8B-Webssh/" title="Cloudflare Zerotrust 之 Webssh"
            class="list-group-item list-group-item-action
-           ">
+           active">
           <span class="category-post">Cloudflare Zerotrust 之 Webssh</span>
         </a>
       
@@ -359,7 +364,7 @@
       
         <a href="/2024/06/19/Cloudflare%E7%9B%B8%E5%85%B3%E6%95%99%E7%A8%8B/" title="Cloudflare相关教程"
            class="list-group-item list-group-item-action
-           active">
+           ">
           <span class="category-post">Cloudflare相关教程</span>
         </a>
       
@@ -445,12 +450,12 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">Cloudflare相关教程</h1>
+            <h1 id="seo-header">Cloudflare Zerotrust 之 Webssh</h1>
             
               <p id="updated-time" class="note note-info" style="display: none">
                 
                   
-                    本文最后更新于 2024-06-19T17:37:25+08:00
+                    本文最后更新于 2024-06-24T17:21:30+08:00
                   
                   
 
@@ -460,27 +465,91 @@
             
               <div class="markdown-body">
                 
-                <p>​	<strong>Cloudflare是偶滴神！</strong></p>
+                <h4 id="参考链接："><a href="#参考链接：" class="headerlink" title="参考链接："></a>参考链接：</h4><blockquote>
+<p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/kelley-h/p/17516053.html">使用cloudflare转发ssh端口 - kelley_go - 博客园 (cnblogs.com)</a></p>
+<p><a target="_blank" rel="noopener" href="https://blog.hellowood.dev/posts/%E4%BD%BF%E7%94%A8cloudflare-tunnels%E9%80%9A%E8%BF%87web-ssh%E8%AE%BF%E9%97%AE%E6%9C%8D%E5%8A%A1%E5%99%A8/">使用 Cloudflare Tunnels 通过 Web SSH 访问服务器 (hellowood.dev)</a></p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/stone_fall/article/details/108630115">Linux | systemd详解 | system.service | 参数解析_remainafterexit-CSDN博客</a></p>
+<p><a target="_blank" rel="noopener" href="https://cloudflared.cn/get-started/create-local-tunnel/">创建本地管理隧道 (CLI) | Cloudflare Tunnel 中文文档 (cloudflared.cn)</a></p>
+</blockquote>
+<h2 id="先决条件"><a href="#先决条件" class="headerlink" title="先决条件"></a>先决条件</h2><p>必须需要一个 cloudflare 账号，以及开通 cloudflare zero trust</p>
+<p>安装cloudflare：<a target="_blank" rel="noopener" href="https://github.com/cloudflare/cloudflared/releases">Releases · cloudflare&#x2F;cloudflared (github.com)</a></p>
+<h2 id="配置-Tunnels"><a href="#配置-Tunnels" class="headerlink" title="配置 Tunnels"></a>配置 Tunnels</h2><p>Cloudflare 提供两种方式创建隧道：</p>
 <ol>
-<li><h2 id="Workers-Pages-项目集"><a href="#Workers-Pages-项目集" class="headerlink" title="Workers &amp; Pages 项目集"></a>Workers &amp; Pages 项目集</h2><ul>
-<li><a target="_blank" rel="noopener" href="https://github.com/zhuima/awesome-cloudflare">GitHub - zhuima&#x2F;awesome-cloudflare: 精选的 Cloudflare 工具、开源项目、指南、博客和其他资源列表</a></li>
-<li><a target="_blank" rel="noopener" href="https://jialikemeng.github.io/post/Cloudflare%20Workers%20-you-xiu-xiang-mu-ji-jing.html">Cloudflare Workers 优秀项目集景 (jialikemeng.github.io)</a></li>
-</ul>
-</li>
-<li><h2 id="ZeroTurst-内网穿透系列"><a href="#ZeroTurst-内网穿透系列" class="headerlink" title="ZeroTurst 内网穿透系列"></a>ZeroTurst 内网穿透系列</h2><ul>
-<li><p><a target="_blank" rel="noopener" href="https://dmesg.app/cloudflare">Cloudflare | 土豆不好吃 (dmesg.app)</a></p>
-<p>当然如果不想改 config 那么也可以</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs stylus">cloudflared access ssh <span class="hljs-attr">--hostname</span> ssh<span class="hljs-selector-class">.dmesg</span><span class="hljs-selector-class">.app</span> <span class="hljs-attr">--url</span> <span class="hljs-number">127.0</span>.<span class="hljs-number">0.1</span>:<span class="hljs-number">10022</span><br></code></pre></td></tr></table></figure>
-
-<p>然后另外一个窗口</p>
-<figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs apache"><span class="hljs-attribute">ssh</span> root@<span class="hljs-number">127.0.0.1</span> -p <span class="hljs-number">10022</span><br></code></pre></td></tr></table></figure>
-</li>
-<li><p><a target="_blank" rel="noopener" href="https://josephcz.xyz/technology/network/cloudflare-webssh-zerotrust/">使用 Cloudflare ZeroTrust 搭建 WebSSH | Joseph’s Blog (josephcz.xyz)</a></p>
-</li>
-</ul>
-</li>
-<li><h2 id="待更新"><a href="#待更新" class="headerlink" title="待更新"></a>待更新</h2></li>
+<li>在 zero trust 页面用 web 添加授权</li>
+<li>在本地服务器（raspberry）上用 config 文件添加</li>
 </ol>
+<p>建议采用第一种方法，配置较为直观。本教程只讲述第二种方法</p>
+<h3 id="登录cloudflared"><a href="#登录cloudflared" class="headerlink" title="登录cloudflared"></a>登录cloudflared</h3><p>先安装cloudflared，然后运行以下命令：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">cloudflared tunnel login<br></code></pre></td></tr></table></figure>
+
+<blockquote>
+<p>终端会给出一个类似 <a target="_blank" rel="noopener" href="https://dash.cloudflare.com/argotunnel?callback=https://login.cloudflareaccess.org%25xxxxxxxxxxxxxxxxxxxxxxx">https://dash.cloudflare.com/argotunnel?callback=https%3A%2F%2Flogin.cloudflareaccess.org%xxxxxxxxxxxxxxxxxxxxxxx</a> 的登陆地址，复制黏贴该地址到浏览器中，然后按照要求登录即可。<br>如果是有二步验证的，需要登录了以后，再次黏贴该地址，因为二步验证结束后并不会自动跳转到该 cloudflared 验证登录页面。</p>
+<p>授权的话，每次只能选择一个网站，当然，一个网站也就够用了，我们可以解析很多三级域名。</p>
+<p>当然如果需要授权多个网站，授权完成后不要关闭网页！依次点击其他需要授权的域名，进行多次授权。 </p>
+</blockquote>
+<p>运行成功的话，会生成 ~&#x2F;.cloudflared&#x2F;cert.pem文件。</p>
+<h3 id="创建tunnel"><a href="#创建tunnel" class="headerlink" title="创建tunnel"></a>创建tunnel</h3><p>创建完以后，会把信息保存到 <code>~ /.cloudflared</code> 文件夹下，注意不要误删了 </p>
+<ul>
+<li><code>cloudflared tunnel create &lt;你的隧道名字&gt;</code></li>
+<li>示例： <code>cloudflared tunnel create xm2</code></li>
+</ul>
+<h3 id="创建域名-CNAME"><a href="#创建域名-CNAME" class="headerlink" title="创建域名 CNAME"></a>创建域名 CNAME</h3><p>添加一个域名:</p>
+<ul>
+<li><code>cloudflared tunnel route dns &lt;隧道名字&gt; &lt;域名&gt;</code></li>
+<li>示例<code> cloudflared tunnel route dns xm2 ssh.cngo.us.kg</code></li>
+</ul>
+<p>然后 cloudflare 就会在你的域名下自动生成一个 CNAME，把 ssh.cngo.us.kg 指向 &lt;隧道 UUID&gt;.cfargotunnel.com</p>
+<p>以此类推，我们可以如法炮制在面板上添加其他的需要的 CNAME</p>
+<h3 id="配置-Config-文件"><a href="#配置-Config-文件" class="headerlink" title="配置 Config 文件"></a>配置 Config 文件</h3><p>添加好想要穿透的域名后，我们就可以开始映射了。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs shell"><span class="hljs-meta prompt_"># </span><span class="language-bash">sudo vim  ~/.cloudflared/config.yml</span><br><br>tunnel: 8d7488ac-fae9-4672-bb34-f864c7b0b385<br>credentials-file: /home/android/.cloudflared/8d7488ac-fae9-4672-bb34-f864c7b0b385.json<br><br>ingress:<br>  - hostname: ssh.cngo.us.kg<br>    service: ssh://localhost:22<br>  - service: http_status:404<br></code></pre></td></tr></table></figure>
+
+<p>注意：最后的 - service: http_status:404 一定要加，这是兜底的规则。还有复制黏贴的时候确保格式没有错误，很可能会发生 mapping error。</p>
+<p>最后生效的配置文件位置 &#x2F;etc&#x2F;cloudflared&#x2F;config.yml </p>
+<h3 id="配置完以后，可以测试下配置文件是否有问题。"><a href="#配置完以后，可以测试下配置文件是否有问题。" class="headerlink" title="配置完以后，可以测试下配置文件是否有问题。"></a>配置完以后，可以测试下配置文件是否有问题。</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs sh"><span class="hljs-comment"># sudo cloudflared --config ~/.cloudflared/config.yml  tunnel ingress validate</span><br>Validating rules from /home/android/.cloudflared/config.yml<br>OK<br></code></pre></td></tr></table></figure>
+
+<h3 id="启动隧道"><a href="#启动隧道" class="headerlink" title="启动隧道"></a>启动隧道</h3><figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs arduino">cloudflared tunnel --config [配置文件路径] run`<br>示例：`cloudflared tunnel --config ~/.cloudflared/config.yml run<br></code></pre></td></tr></table></figure>
+
+<h3 id="移除已有服务"><a href="#移除已有服务" class="headerlink" title="移除已有服务"></a>移除已有服务</h3><p>若以前配置过cloudflared服务，则需要先卸载，同时移除配置文件<code>/etc/cloudflared/config.yml</code>。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs shell">sudo cloudflared service uninstall<br><br>sudo rm /etc/cloudflared/config.yml<br></code></pre></td></tr></table></figure>
+
+<h3 id="安装cloudflared服务"><a href="#安装cloudflared服务" class="headerlink" title="安装cloudflared服务"></a>安装cloudflared服务</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs shell">sudo cloudflared --config ~/.cloudflared/config.yml service install<br><br><br>2024-06-22T15:40:40Z INF Using SysV<br>2024-06-22T15:40:41Z INF Linux service for cloudflared installed successfully<br></code></pre></td></tr></table></figure>
+
+<blockquote>
+<p>指定安装config文件，否则可能报错：</p>
+<p>Cannot determine default configuration path. No file [config.yml config.yaml] in [~&#x2F;.cloudflared ~&#x2F;.cloudflare-warp ~&#x2F;cloudflare-warp &#x2F;etc&#x2F;cloudflared &#x2F;usr&#x2F;local&#x2F;etc&#x2F;cloudflared]</p>
+</blockquote>
+<h3 id="配置Linux系统服务cloudflared-service"><a href="#配置Linux系统服务cloudflared-service" class="headerlink" title="配置Linux系统服务cloudflared.service"></a>配置Linux系统服务cloudflared.service</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">sudo vim /usr/lib/systemd/system/cloudflared.service<br></code></pre></td></tr></table></figure>
+
+<p>加入如下内容：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs text">[Unit]<br>Description=Cloudflared<br>After=network.target<br><br>[Service]<br>Type=simple<br>ExecStart=/etc/init.d/cloudflared start<br>ExecReload=/etc/init.d/cloudflared restart<br>ExecStop=/etc/init.d/cloudflared stop<br><br>Restart=on-failure<br>TimeoutSec=300<br><br>[Install]<br>WantedBy=multi-user.target<br></code></pre></td></tr></table></figure>
+
+<p>然后配置开机自启动，由于chroot容器不支持systemctl，可根据下列链接安装servicectl命令</p>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/sw-code/p/14998645.html">安卓手机改造服务器——解决chroot下无法使用systemctl - sw-code - 博客园 (cnblogs.com)</a></p>
+</blockquote>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs shell">sudo systemctl enable cloudflared<br><span class="hljs-meta prompt_">#</span><span class="language-bash">or</span><br>sudo servicectl enable cloudflared<br></code></pre></td></tr></table></figure>
+
+<h2 id="创建-SSH-应用"><a href="#创建-SSH-应用" class="headerlink" title="创建 SSH 应用"></a>创建 SSH 应用</h2><ul>
+<li>创建应用</li>
+</ul>
+<p>在 Cloudflare 控制台 &gt; Zero Trust &gt; Access &gt; Applications 选择 Add an application 创建新的应用；应用类型为 Self-hosted</p>
+<p><img src="https://img.hellowood.dev/picture/homelab-cloudflare-ssh-application-create.png" srcset="/img/loading.gif" lazyload alt="homelab-cloudflare-ssh-application-create.png"></p>
+<ul>
+<li>配置应用信息</li>
+</ul>
+<p>指定应用名称，并为应用配置域名；session 的过期时间可以按需配置</p>
+<p><img src="https://img.hellowood.dev/picture/homelab-cloudflare-ssh-configuration-application.png" srcset="/img/loading.gif" lazyload alt="homelab-cloudflare-ssh-configuration-application.png"></p>
+<ul>
+<li>指定访问策略</li>
+</ul>
+<p>需要配置访问策略，只允许特定的邮箱登陆；如果需要使用其他的认证方式，如 GitHub&#x2F;Google SSO 等，可以在 Cloudflare 控制台 &gt; Zero Trust &gt; Settings &gt; Authentication &gt; Login Methods 中添加</p>
+<p><img src="https://img.hellowood.dev/picture/homelab-cloudflare-ssh-configuration-policy.png" srcset="/img/loading.gif" lazyload alt="homelab-cloudflare-ssh-configuration-policy.png"></p>
+<ul>
+<li>修改应用类型</li>
+</ul>
+<p>在 Additional settings 中，将 Browser rendering 的类型改为 SSH；然后选择保存，这样就配置好 SSH 应用了</p>
+<p><img src="https://img.hellowood.dev/picture/homelab-cloudflare-ssh-set-application-type.png" srcset="/img/loading.gif" lazyload alt="homelab-cloudflare-ssh-set-application-type.png"></p>
+<h2 id="踩坑经历"><a href="#踩坑经历" class="headerlink" title="踩坑经历"></a>踩坑经历</h2><p>通过cloudns配置的域名未添加子域名NS，导致CNAME不生效，一定要确保域名CNAME是生效的</p>
 
                 
               </div>
@@ -526,8 +595,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>Cloudflare相关教程</div>
-      <div>https://blog.cngo.rr.nu/2024/06/19/Cloudflare相关教程/</div>
+      <div>Cloudflare Zerotrust 之 Webssh</div>
+      <div>https://blog.cngo.rr.nu/2024/06/22/Cloudflare-Zerotrust-之-Webssh/</div>
     </div>
     <div class="license-meta">
       
@@ -539,7 +608,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2024年6月19日</div>
+          <div>2024年6月22日</div>
         </div>
       
       
@@ -571,9 +640,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2024/06/20/Java%E6%8A%BD%E8%B1%A1%E7%B1%BB%E4%B8%8E%E6%8E%A5%E5%8F%A3/" title="Java抽象类与接口">
+                      <a href="/2024/06/22/Termux-%E5%AE%89%E5%8D%93%E7%BB%88%E7%AB%AF%E6%A8%A1%E6%8B%9F%E5%99%A8/" title="Termux-安卓终端模拟器">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Java抽象类与接口</span>
+                        <span class="hidden-mobile">Termux-安卓终端模拟器</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -581,8 +650,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2024/06/19/Hexo%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E4%B8%8EFluid%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/" title="Hexo自定义域名与Fluid评论系统">
-                        <span class="hidden-mobile">Hexo自定义域名与Fluid评论系统</span>
+                      <a href="/2024/06/21/%E5%A4%A7%E5%AD%A6%E5%9B%9B%E5%B9%B4%E9%98%85%E8%AF%BB%E6%B8%85%E5%8D%95/" title="大学四年阅读清单">
+                        <span class="hidden-mobile">大学四年阅读清单</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
